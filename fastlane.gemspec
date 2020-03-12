@@ -15,28 +15,28 @@ Gem::Specification.new do |spec|
   spec.name          = "fastlane"
   spec.version       = Fastlane::VERSION
   # list of authors is regenerated and resorted on each release
-  spec.authors       = ["Jorge Revuelta H",
-                        "Maksym Grebenets",
-                        "Olivier Halligon",
-                        "Daniel Jankowski",
-                        "Fumiya Nakamura",
-                        "Josh Holtz",
-                        "Andrew McBurney",
-                        "Iulian Onofrei",
-                        "Kohki Miki",
-                        "Joshua Liebowitz",
-                        "Max Ott",
+  spec.authors       = ["Joshua Liebowitz",
                         "Stefan Natchev",
-                        "Jérôme Lacoste",
+                        "Andrew McBurney",
                         "Aaron Brager",
-                        "Jan Piotrowski",
-                        "Danielle Tomlinson",
-                        "Jimmy Dee",
-                        "Manu Wallner",
-                        "Luka Mirosevic",
-                        "Felix Krause",
+                        "Fumiya Nakamura",
+                        "Daniel Jankowski",
+                        "Kohki Miki",
+                        "Jorge Revuelta H",
                         "Matthew Ellis",
-                        "Helmut Januschka"]
+                        "Luka Mirosevic",
+                        "Iulian Onofrei",
+                        "Danielle Tomlinson",
+                        "Josh Holtz",
+                        "Manu Wallner",
+                        "Jimmy Dee",
+                        "Helmut Januschka",
+                        "Felix Krause",
+                        "Jérôme Lacoste",
+                        "Olivier Halligon",
+                        "Max Ott",
+                        "Jan Piotrowski",
+                        "Maksym Grebenets"]
 
   spec.email         = ["fastlane@krausefx.com"]
   spec.summary       = Fastlane::DESCRIPTION
@@ -110,6 +110,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency('google-cloud-storage', '>= 1.15.0', '< 2.0.0') # Access Google Cloud Storage for match
 
   spec.add_dependency('emoji_regex', '>= 0.1', '< 2.0') # Used to scan for Emoji in the changelog
+
+  spec.add_dependency('aws-sdk', '~> 2.3') # Used in match for S3 storage
 
   # Development only
   spec.add_development_dependency('rake', '< 12')
